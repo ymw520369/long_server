@@ -1,0 +1,13 @@
+package org.longjiang.game.web.been;
+
+import "proto/protostuff-default.proto";
+
+
+option java_package = "org.longjiang.game.web.been";
+option java_outer_classname="EResult";
+
+enum EResult {
+  SUCCESS = 0;
+  FAIL = 1;
+}
+

@@ -1,0 +1,11 @@
+org\longjiang\core\interceptor\EncryptResponseBodyAdvice.class
+org\longjiang\core\data\Protobuf.class
+org\longjiang\core\result\GeneralResult.class
+org\longjiang\core\interceptor\LogInterceptor.class
+org\longjiang\core\interceptor\CustomWebMvcConfigurerAdapter.class
+org\longjiang\core\interceptor\DecryptRequestBodyAdvice.class
+org\longjiang\core\data\Platform.class
+org\longjiang\core\interceptor\RequestInterceptor.class
+org\longjiang\core\interceptor\ProtostuffHttpMessageConverter.class
+org\longjiang\core\data\ClientVersion.class
+org\longjiang\core\log\LogMessage.class

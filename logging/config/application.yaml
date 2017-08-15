@@ -1,0 +1,52 @@
+# Server settings (ServerProperties)
+logging:
+ config: config/logback.xml
+ level.*: debug
+
+zookeeper:
+ connects: 192.168.5.128:2181
+ baseSleepTimeMs: 1000
+ maxRetries: 3
+ marsRoot: alan
+
+host: 192.168.199.123
+
+cluster:
+  type: LOG
+  name: LOG1
+  number: 1
+  httpAddress:
+   port: 8085
+   host: ${host}
+
+server:
+ port: ${cluster.httpAddress.port}
+ #address: 192.168.2.21
+ sessionTimeout: 30
+ contextPath: /
+ 
+tomcat:
+ accessLogEnabled: false
+ protocolHeader: x-forwarded-proto
+ remoteIpHeader: x-forwarded-for
+ backgroundProcessorDelay: 30 # secs
+spring.data.mongodb:
+      host: 192.168.5.128
+      port: 27017
+      database: longjiang-log
+      username: longjiang
+      password: longjiang147
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: 192.168.5.128:9092
+      client-id: consumer3
+      value-deserializer: org.alan.logging.LogMessageJsonDeserializer
+      group-id: 2
+      enable-auto-commit: false
+    listener:
+      ack-mode: manual
+
+
+
+

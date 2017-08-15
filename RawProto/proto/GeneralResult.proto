@@ -1,0 +1,11 @@
+package org_longjiang_game_web_result;
+
+
+option java_package = "org.longjiang.game.web.result";
+
+message GeneralResult {
+  optional int32 code = 1;
+  optional bytes data = 2;
+  optional string des = 3;
+}
+

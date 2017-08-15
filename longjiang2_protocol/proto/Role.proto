@@ -1,0 +1,16 @@
+package org.longjiang.game.web.been.player.module;
+
+import "proto/protostuff-default.proto";
+
+
+option java_package = "org.longjiang.game.web.been.player.module";
+option java_outer_classname="Role";
+
+message Role {
+  optional int64 accountId = 1;
+  optional int64 roleUid = 2;
+  optional string roleName = 3;
+  optional int64 money = 4;
+  optional int64 diamond = 5;
+}
+

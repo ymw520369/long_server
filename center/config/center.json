@@ -1,0 +1,30 @@
+[
+  {
+    "platform": "IOS",
+    "majorVersion": 1,
+    "subVersion": 1,
+    "microVersion": 1,
+    "serverUpdateUrl": "",
+    "resourceUpdateUrl": "http://192.168.5.128:9003/",
+    "appUpdateUrl": "http://192.168.5.128:9003/",
+    "forced": true,
+    "approvalMajorVersion": 1,
+    "approvalSubVersion": 1,
+    "approvalMicroVersion": 1,
+    "approvalResourceUpdateUrl": "http://192.168.5.128:9003/"
+  },
+  {
+    "platform": "ANDROID",
+    "majorVersion": 1,
+    "subVersion": 0,
+    "microVersion": 0,
+    "serverUpdateUrl": "",
+    "resourceUpdateUrl": "http://192.168.5.128:9003/",
+    "appUpdateUrl": "http://192.168.5.128:9003/",
+    "forced": true,
+    "approvalMajorVersion": 2,
+    "approvalSubVersion": 1,
+    "approvalMicroVersion": 1,
+    "approvalResourceUpdateUrl": "http://192.168.5.128:9003/"
+  }
+]

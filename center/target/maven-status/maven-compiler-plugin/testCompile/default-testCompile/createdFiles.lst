@@ -1,0 +1,7 @@
+org\alan\miner\test\AppTest.class
+org\alan\miner\test\TcpPingTest.class
+org\alan\miner\test\CertifyTest.class
+org\alan\miner\test\HttpTest.class
+org\alan\miner\test\TcpPingTest$HelloClientIntHandler.class
+org\alan\miner\test\TcpPingTest$1.class
+org\alan\miner\test\CheckToken.class

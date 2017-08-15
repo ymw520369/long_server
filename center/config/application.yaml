@@ -1,0 +1,71 @@
+# Server settings (ServerProperties)
+logging:
+ config: config/logback.xml
+ level.*: debug
+
+zookeeper:
+ connects: 192.168.5.128:2181
+ baseSleepTimeMs: 1000
+ maxRetries: 3
+ marsRoot: longjiang
+
+host: 192.168.199.123
+
+cluster:
+  type: CENTER
+  name: C1
+  number: 1
+  useGate: false
+  tcpAddress:
+   port: 11100
+   host: ${host}
+  httpAddress:
+   port: 8081
+   host: ${host}
+  rpcAddress:
+   port: 11101
+   host: ${host}
+
+center:
+ ipInfoUrl: http://ip.taobao.com/service/getIpInfo.php
+
+tcp:
+ port: ${cluster.tcpAddress.port}
+ host: ${cluster.tcpAddress.host}
+tsdk:
+ url: http://192.168.2.200:8080/TSDK
+ certifyPath: /user/verifyAccount
+ appKey: 7aadeb5300440ac86d59b3c7b3f8d901
+
+server:
+ port: ${cluster.httpAddress.port}
+ #address: 192.168.2.21
+ sessionTimeout: 30
+ contextPath: /
+ 
+tomcat:
+ accessLogEnabled: false
+ protocolHeader: x-forwarded-proto
+ remoteIpHeader: x-forwarded-for
+ backgroundProcessorDelay: 30 # secs
+
+spring.redis:
+  host: 192.168.5.128
+  port: 6379
+  password: alan
+  database: 1
+
+spring.data.mongodb:
+      host: 192.168.5.128
+      port: 27017
+      database: longjiang-center
+      username: longjiang
+      password: longjiang147
+spring:
+  kafka:
+    bootstrap-servers: 192.168.5.128:9092
+    producer:
+      client-id: center-1
+      retries: 3
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      compression-type: gzip

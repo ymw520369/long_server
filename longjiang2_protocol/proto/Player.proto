@@ -1,0 +1,19 @@
+package org.longjiang.game.web.been.player;
+
+import "proto/protostuff-default.proto";
+
+import "proto/PlayerModule.proto";
+import "proto/FightSoul.proto";
+
+option java_package = "org.longjiang.game.web.been.player";
+option java_outer_classname="Player";
+
+message Player {
+  optional int64 playerUid = 1;
+  optional MapObjectObject moduleMap = 2;
+  repeated PlayerModule moduleList = 3;
+  repeated int32 asa = 4;
+  repeated string str = 5;
+  optional FightSoul fightSoul = 6;
+}
+

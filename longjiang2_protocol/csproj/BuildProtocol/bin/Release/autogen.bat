@@ -1,0 +1,1 @@
+"./Precompile/precompile.exe" Protocol.dll -o:ProtoSerializer.dll -t:ProtoSerializer

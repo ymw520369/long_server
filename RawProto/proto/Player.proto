@@ -1,0 +1,11 @@
+package org_longjiang_game_web_been_player;
+
+import "proto/Role.proto";
+
+option java_package = "org.longjiang.game.web.been.player";
+
+message Player {
+  optional int64 roleUid = 1;
+  optional Role role = 2;
+}
+

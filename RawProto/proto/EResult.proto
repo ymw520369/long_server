@@ -1,0 +1,10 @@
+package org_longjiang_game_web_been;
+
+
+option java_package = "org.longjiang.game.web.been";
+
+enum EResult {
+  SUCCESS = 0;
+  FAIL = 1;
+}
+

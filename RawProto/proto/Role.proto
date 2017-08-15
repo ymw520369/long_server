@@ -1,0 +1,13 @@
+package org_longjiang_game_web_been_player;
+
+
+option java_package = "org.longjiang.game.web.been.player";
+
+message Role {
+  optional int64 accountId = 1;
+  optional int64 roleUid = 2;
+  optional string roleName = 3;
+  optional int64 money = 4;
+  optional int64 diamond = 5;
+}
+

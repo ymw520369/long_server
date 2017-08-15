@@ -1,0 +1,14 @@
+package org.longjiang.game.web.been.player.module;
+
+import "proto/protostuff-default.proto";
+
+import "proto/FightSoulItem.proto";
+
+option java_package = "org.longjiang.game.web.been.player.module";
+option java_outer_classname="FightSoul";
+
+message FightSoul {
+  optional int32 pos = 1;
+  optional FightSoulItem item = 2;
+}
+

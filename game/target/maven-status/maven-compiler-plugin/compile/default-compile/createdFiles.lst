@@ -1,0 +1,11 @@
+org\longjiang\game\web\dao\impl\RoleDaoImpl.class
+org\longjiang\game\web\been\RequestWrapper.class
+org\longjiang\game\web\been\player\Role.class
+org\longjiang\game\web\been\player\Player.class
+org\longjiang\game\web\controller\RoleInfoController.class
+org\longjiang\game\web\dao\RoleDao.class
+org\longjiang\game\web\been\EResult.class
+org\longjiang\game\web\controller\GameEnterController.class
+org\longjiang\game\web\been\Wrapper.class
+org\longjiang\game\web\controller\GameEnterController$CreateRole.class
+org\longjiang\game\GameLauncher.class
